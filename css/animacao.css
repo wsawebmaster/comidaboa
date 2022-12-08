@@ -1,0 +1,26 @@
+/* Animação Início */
+
+[data-anime] {
+  opacity: 0;
+  transition: 1.7s;
+  position: relative;
+  z-index: -1;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-1350px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(150px, 0, 0);
+}
+
+[data-anime="top"] {
+  transform: translate3d(0, -150px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+/* Animação Fim */
